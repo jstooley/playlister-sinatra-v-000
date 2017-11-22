@@ -33,6 +33,7 @@ class SongController < Sinatra::Base
     @song_genre.save
     @song.save
     @artist.save
+    binding.pry
     redirect to "/songs/#{@song.slug}"
 
     binding.pry
